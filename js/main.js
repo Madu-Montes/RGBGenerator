@@ -8,3 +8,10 @@ function colors() {
     outputs.style.backgroundColor = 'rgb(' + red + ',' + green + ',' + blue + ')'
     document.getElementById("output").innerHTML = 'rgb(' + red  +  ',' + green + ',' + blue + ')';
 }
+
+function copyToClipboard(){
+    navigator.clipboard.writeText(document.getElementById("output").innerHTML).then(() => {
+        alert('copiado')
+    })
+}
+
