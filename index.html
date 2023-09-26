@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt=br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>RGB generator</title>
 </head>
+
 <body>
-    <h1>RGB Color Generator</h1>
     <div class="container">
         <div id="outputs"></div>
-            <div class="wrapper">
-                R<input type="range" min="0" max="255" value="0" id="red" oninput="colors()">
-            </div>
-            <div class="wrapper">
-                G<input type="range" min="0" max="255" value="0" id="green" oninput="colors()">
-            </div>
-            <div class="wrapper">
-                B<input type="range" min="0" max="255" value="0" id="blue" oninput="colors()">
-            </div>
-            <span id="output">rgb(0, 0, 0)</span>
+        <div class="wrapper">
+            R<input type="range" min="0" max="255" value="0" id="red" class="bar" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            G<input type="range" min="0" max="255" value="0" id="green" class="bar" oninput="colors()">
+        </div>
+        <div class="wrapper">
+            B<input type="range" min="0" max="255" value="0" id="blue" class="bar" oninput="colors()">
+        </div>
 
-            <button onclick="copyToClipboard()">copiar</button>
+            <button onclick="copyToClipboard()" id="output">rgb(0, 0, 0)</button>
+
     </div>
-    
+
     <script src="js/main.js" text="text.javascipt"></script>
 </body>
+
 </html>

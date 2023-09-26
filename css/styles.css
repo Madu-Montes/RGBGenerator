@@ -1,5 +1,5 @@
 body{
-    background-color: #84c4e1;
+    background-color: #a8f57c;
 }
 
 .container{
@@ -40,15 +40,20 @@ input[type="range"]{
     margin-top: 25px;
 }
 
-span{
-    display: inline-block;
-    text-align: center;
-    margin: 20px 0;
-    background-color: #481fae;
-    color: #fff;
-    padding: 10px 30px;
-    box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 160px;
+    height: 45px;
+    margin: 25px 0;
+    padding: 5px;
     font-size: 18px;
     letter-spacing: 0.5px;
-    border-radius: 2px;
+    border: none;
+    background-color: #a8f57c;
 }
+
+/*rgb(126,107,255)
